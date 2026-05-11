@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Admin Interface</h1>
+    <div class="admin-form">
+        <h3>Add New Book</h3>
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="number" id="year" placeholder="Year">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="price" placeholder="Price">
+        <button onclick="addBook()">Add Book</button>
+    </div>
+    <hr>
+    <button onclick="checkReminders()" style="background: orange;">Auto-Send Rental Reminders</button>
+    <div id="admin-book-list"></div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
